@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react'
 import axios from './axios'; // when we import it, we can call it whatver we want since it is exported as default
-
+import './Row.css';
 function Row({title, fetchUrl}) {
     // state is a property of a component that is used to store data
     const [movies, setMovies] = React.useState([]);
@@ -22,7 +22,6 @@ function Row({title, fetchUrl}) {
         console.table(movies); 
      
         fetchData(); 
-
         // if we leave the [] empty, it will run once, so if we add a variable, it will run every time that variable changes
     }, [fetchUrl]);
   return (
