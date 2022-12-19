@@ -30,6 +30,7 @@ function Row({title, fetchUrl}) {
         <h2>{title}</h2>
 
 
+
         <div className="row_posters">
         {/* several row posters  */}
         {movies.map(movie => (  // map is a method that is used to loop through an array
